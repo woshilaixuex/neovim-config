@@ -17,7 +17,7 @@ opt.wrap = false
 -- 光标
 opt.cursorline = true
 -- 系统插入判断速度
-vim.opt.timeoutlen = 200 -- 将超时设置为 100 毫秒
+vim.opt.timeoutlen = 100 -- 将超时设置为 100 毫秒
 -- 启用鼠标
 opt.mouse:append("a")
 

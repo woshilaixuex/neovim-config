@@ -4,3 +4,4 @@ require('lualine').setup({
     icons_enabled = true, -- 启用图标
   }
 })
+

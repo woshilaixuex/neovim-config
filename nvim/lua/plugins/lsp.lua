@@ -9,14 +9,30 @@ require("mason").setup({
 })
 
 require("mason-lspconfig").setup({
-  -- 确保安装，根据需要填写
   ensure_installed = {
     "lua_ls",
+    "gopls",
+    "clangd",
   },
 })
 
+
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
+-- Lua Language Server 
 require("lspconfig").lua_ls.setup {
   capabilities = capabilities,
+  filetypes = { "lua" },
+}
+
+-- Go Language Server
+require("lspconfig").gopls.setup {
+  capabilities = capabilities,
+  filetypes = { "go" },
+}
+
+-- C++ Language Server
+require("lspconfig").clangd.setup {
+  capabilities = capabilities,
+  filetypes = { "cpp", "c", "h" },  -- 可根据需要添加其他文件类型
 }

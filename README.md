@@ -13,3 +13,5 @@ ctrl+h/j/k/l 为窗口跳转
 插入模式
 
 ctrl+h/j/k/l 上下左右移动
+
+:split | terminal 控制台并分屏 
