@@ -1,0 +1,22 @@
+{
+  "name": "my-snippets",
+  "engines": {
+    "vscode": "v0.0.1"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": [
+          "cpp","c","h"
+        ],
+        "path": "./my-snippets/c.json"
+      },
+      {
+        "language": [
+          "go"
+        ],
+        "path": "./my-snippets/go.json"
+      }
+    ]
+  }
+}

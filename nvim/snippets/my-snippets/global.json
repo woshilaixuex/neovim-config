@@ -1,0 +1,10 @@
+{
+    "Add Global Snippet": {
+        "prefix": "globalSnippet",
+        "body": [
+            "This is a global snippet!"
+        ],
+        "description": "A simple global snippet"
+    }
+}
+
