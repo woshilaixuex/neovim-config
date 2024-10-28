@@ -29,6 +29,7 @@ keymap.set("n", "<A-j>", "0i<CR><Esc>k")
 -- 在插入模式下使用 主键 + j/k 交换下上移动
 keymap.set("n", "<leader>k", "<Esc>:m .-2<CR>") -- 向上交换
 keymap.set("n", "<leader>j", "<Esc>:m .+1<CR>") -- 向下交换
+vim.api.nvim_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', { noremap = true, silent = true })
 
 --------------- 插件 --------------
 -- nvim-tree

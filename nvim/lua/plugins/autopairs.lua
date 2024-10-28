@@ -29,3 +29,7 @@ if not cmp_status_ok then
   return
 end
 cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done { map_char = { tex = "" } })
+-- 配置go自动对齐
+vim.api.nvim_exec([[
+  autocmd BufWritePre *.go silent! :%!gofmt
+]], false)
